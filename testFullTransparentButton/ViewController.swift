@@ -10,16 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    @IBOutlet weak var testAlphaButton: UIButton!
+    
+    @IBAction func testAlpha(_ sender: UIButton) {
+        sender.alpha = sender.alpha > 0 ? 0 : 1
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
